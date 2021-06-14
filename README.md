@@ -1,5 +1,5 @@
 # project-local-library
-Local Library Assessment 
+##Local Library Assessment 
 Project: Local Library
 Your neighborhood has decided to put together a local library where people can lend and borrow books. One of the most important features to organize this is a dashboard that will show which books are available, which are currently out, and other general statistics about the program.
 
@@ -8,7 +8,7 @@ Others are taking care of the logistics and and design, but they need you to bui
 
 This project is designed to test your ability to work with large datasets and build algorithms based on those datasets. Before taking on this module, you should be comfortable with the learning objectives listed below. You will not need to make any edits to HTML or CSS for this project.
 
-Learning Objectives
+##Learning Objectives
 This project will assess the following learning objectives, in addition to many others:
 
 Use Visual Studio Code as a text editor.
@@ -23,7 +23,7 @@ Use .reduce() to solve different problems.
 Use .sort() to sort arrays in various ways.
 Project Setup
 
-While working on this project you should:
+##While working on this project you should:
 
 Use well-named variables, in particular avoiding any single letter variables that lack meaning.
 Use native array methods like .find(), .filter(), .map(), and .reduce().
@@ -36,10 +36,10 @@ Change the names of the functions.
 Edit any of the files outside of the public/src/ directory.
 If you feel as though one of your solutions is working but something isn't showing up right on the site or in the tests, reach out for help.
 
-Datasets
+##Datasets
 There are three datasets that are a part of this project: accounts, authors, and books.
 
-Accounts
+##Accounts
 You can view all of the accounts data inside of the public/data/ directory. Each account is an object with the following shape:
 
 {
@@ -70,7 +70,7 @@ An author represents someone who wrote one or more books in the library.
 
 Note: Author's IDs are set to be numbers instead of strings, like the other two data sets.
 
-Books
+##Books
 You can view all of the books data inside of the public/data/ directory. Each book is object with the following shape:
 
 {
