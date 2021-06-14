@@ -5,7 +5,6 @@ Your neighborhood has decided to put together a local library where people can l
 
 Others are taking care of the logistics and and design, but they need you to build the algorithms!
 
-image.png
 
 This project is designed to test your ability to work with large datasets and build algorithms based on those datasets. Before taking on this module, you should be comfortable with the learning objectives listed below. You will not need to make any edits to HTML or CSS for this project.
 
