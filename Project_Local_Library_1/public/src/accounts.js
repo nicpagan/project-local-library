@@ -29,34 +29,35 @@ return sortedAccounts;
 
 
 
-// return num
-// create counter to increment
-// iterate books arr w/ for...of: for(let element of arr)
-// extract all transactions from borrows: element.borrows >> book.borrows
-// .forEach on arr of transactions to execute function once for every arr element
-// (transaction)=> if transaction.id === account.id, increment counter
-// exit for...of loop and return counter
-//
+//ADDED .reduce() METHOD AS PER REVISION REQUEST
+//returns a num that represents the number of times the accounts ID appears in book's 'borrow' array
+//use books.reduce() to get array of borrows
+//books[i].borrows --> item.borrows
+// identify borrows and iterate
 function getTotalNumberOfBorrows(account, books) {
-  //declare counter  
-  let counter = 0;
-    //iterate through books arr to look at each element
-    for (let book of books) {
-      //extract transactions from borrows element (looking at value of borrows)
-      let transactions = book.borrows
-      // for each element in transactions, execute function
-      transactions.forEach((transaction) => {
-        //check if transaction.id matched account.id  
-        if(transaction.id === account.id) {
-          //incrementing counter  
+  //use reduce method on books array
+  let results = books.reduce((accumulator, item) => {
+    //return the acc array(empty array) and the use .concat to merge acc array and items.borrows array.
+    //const array3 = array1.concat(array2);
+    return accumulator.concat(item.borrows)
+  }, []);
+    // console.log("results", results)
+      //results [
+      // { id: '5f446f2ea6b68cf6f85f6e28', returned: true },
+      // { id: '5f446f2ead0070f44676f2f6', returned: true },
+      // { id: '5f446f2e2cfa3e1d234679b9', returned: false },
+  
+      //create counter to hold total number of borrows
+      let counter = 0;
+      //use .forEach to loop through each result of results array
+      results.forEach((result) => {
+        if (result.id === account.id) {
           counter ++
-          }
-        })
-  }
-  //returning counter
-  return counter
+          //if result.id matches the account.id, increment counter
+        }
+      })
+      return counter;
 }
-
 
 
 
